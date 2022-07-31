@@ -65,7 +65,7 @@ for queryItem in queryList:
                 totalSeq=0
                 break 
         for i in range(len(CDSarray)-1,-1,-1):
-            totalSeq+= cds_seq[2]
+            totalSeq+= CDSarray[i][2]
             if totalSeq >=cdsEnd:
                 realEnd= CDSarray[i][0]+(totalSeq-cdsEnd)
                 totalSeq=0
